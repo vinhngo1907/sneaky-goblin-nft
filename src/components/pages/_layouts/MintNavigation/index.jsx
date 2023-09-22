@@ -30,6 +30,26 @@ import './MintNavigation.scss';
 
 const MintNavigation = () => {
     // States
+    const [showMenu, setShowMenu] = useState(false);
+    const [showModal, setShowModal] = useState(false);
+    const [showMobileFooter, setShowMobileFooter] = useState(true);
+    const [pageContentType, setPageContentType] = useState('');
+
+    // Social Medias
+    const [socials] = useState({
+        discord: 'https://discord.gg/v-koo-kuu',
+        opensea: 'https://opensea.io/collection/v-koo-kuu',
+        insta: 'https://instagram.com/v-koo-kuu',
+        twitter: 'https://twitter.com/v-koo-kuu',
+    });
+
+    // Handers
+    const onClickModalPageHandler = () => setShowMenu(!showMenu);
+    const onHideModalHandler = () => {
+        setShowMobileFooter(true);
+        setShowModal(false);
+    };
+
     return (
         <div className="_minting-nav-wrap">
             {/* Desktop Nav */}
@@ -126,11 +146,20 @@ const MintNavigation = () => {
                         </ul>
                     </div>
                 </nav>
+                {showModal && (
+                    <Floater show={showModal} onHide={() => onHideModalHandler()} width={80}>
+                        {onClickModalPageContentSelector(pageContentType)}
+                    </Floater>
+                )}
             </div>
-             {/* Custom Mobile Nav */}
-             <div className="_minting-nav container-fluid d-block d-lg-none">
-                
-             </div>
+            {/* Custom Mobile Nav */}
+            <div className="_minting-nav container-fluid d-block d-lg-none">
+
+            </div>
+            {/* Full Overlay - Mobile Menu */}
+            <div id="MobileMenu" className={showMenu ? 'show d-block d-lg-none' : 'hide'}>
+                <div className="mobile-menu-link-wrap"></div>
+            </div>
         </div>
     )
 }
