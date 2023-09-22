@@ -154,7 +154,41 @@ const MintNavigation = () => {
             </div>
             {/* Custom Mobile Nav */}
             <div className="_minting-nav container-fluid d-block d-lg-none">
-
+                <div className="row">
+                    <div className="col-4">
+                        <div className="menu-wrap-mobile">
+                            <div onClick={onClickMenuHandler} className="menu-inner-wrap">
+                                <img src={showMenu ? closeMenu : menu} alt="" />
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-4">
+                        <Link to="/" className="">
+                            <div className="logo-wrapper">
+                                <img src={sgLogo} alt="" />
+                            </div>
+                        </Link>
+                    </div>
+                    <div className="col-4">
+                        <div className="connector-wrap-mobile">
+                            <Connector
+                                connText="Connect Wallet"
+                                disconnText="Disconnect"
+                                curve={3}
+                                bgColor="linear-gradient(84.07deg, #00C555 16.64%, #00E75E 93.78%)"
+                                hoverBgColor="#15ad57"
+                                lineColor="#FFC748"
+                                hoverLineColor="#FFC748"
+                                lineSize={1}
+                                textSize={1.15}
+                                textColor="black"
+                                height={60}
+                                width={180}
+                                padd="10px 10px"
+                            />
+                        </div>
+                    </div>
+                </div>
             </div>
             {/* Full Overlay - Mobile Menu */}
             <div id="MobileMenu" className={showMenu ? 'show d-block d-lg-none' : 'hide'}>
