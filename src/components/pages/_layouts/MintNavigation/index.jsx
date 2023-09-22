@@ -26,3 +26,111 @@ import metaverse from '../../../../assets/imgs/metaverse.svg';
 import artistConfeti from '../../../../assets/imgs/artist-confeti.svg';
 import artistRod from '../../../../assets/imgs/artist-rod.svg';
 import artistProfile from '../../../../assets/imgs/artist-profile.png';
+import './MintNavigation.scss';
+
+const MintNavigation = () => {
+    // States
+    return (
+        <div className="_minting-nav-wrap">
+            {/* Desktop Nav */}
+            <div className="_minting-nav container d-none d-lg-block">
+                <nav className="navbar navbar-expand-lg navbar-dark">
+                    <button
+                        className="navbar-toggler"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#navbarToggle"
+                        aria-controls="navbarToggle"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                    >
+                        <div className="mobile-menu-btn-wrapper">
+                            <img src={menu} alt="" />
+                        </div>
+                    </button>
+                    <div
+                        className="collapse navbar-collapse justify-content-between"
+                        id="navbarToggle"
+                    >
+                        <ul className="navbar-nav custom-nav left">
+                            <li className="nav-item">
+                                <a
+                                    className="nav-link"
+                                    onClick={() => onClickModalPageHandler('roadmap')}
+                                >
+                                    Roadmap
+                                </a>
+                            </li>
+                            <li className="nav-item">
+                                <a
+                                    className="nav-link"
+                                    onClick={() => onClickModalPageHandler('mission')}
+                                >
+                                    Mission
+                                </a>
+                            </li>
+                            <li className="nav-item">
+                                <a
+                                    className="nav-link"
+                                    onClick={() => onClickModalPageHandler('artist')}
+                                >
+                                    Artist
+                                </a>
+                            </li>
+                        </ul>
+
+                        <a href="https://sneakygoblins.co/" className="navbar-brand d-none d-lg-block">
+                            <div className="logo-wrapper">
+                                <img src={sgLogo} alt="SneakyGoblins" />
+                            </div>
+                            {/* This is hidden visually, for SEO*/}
+                            <h1 id="MainTextBrand">SneakyGoblins</h1>
+                        </a>
+
+                        <ul className="navbar-nav custom-nav right">
+                            <div className="spacer-last" />
+                            <li className="nav-item">
+                                <a className="nav-link" target="_blank" href={socials.discord}>
+                                    <img src={discordLogo} alt="" />
+                                </a>
+                            </li>
+                            <li className="nav-item">
+                                <a className="nav-link" target="_blank" href={socials.opensea}>
+                                    <img src={openseaLogo} alt="" />
+                                </a>
+                            </li>
+                            <li className="nav-item">
+                                <a className="nav-link" target="_blank" href={socials.insta}>
+                                    <img src={instaLogo} alt="" />
+                                </a>
+                            </li>
+                            <li className="nav-item">
+                                <a className="nav-link" target="_blank" href={socials.twitter}>
+                                    <img src={twitterLogo} alt="" />
+                                </a>
+                            </li>
+                            <div className="spacer-last" />
+                            <li>
+                                <Connector
+                                    connText="Connect Wallet"
+                                    disconnText="Disconnect"
+                                    curve={3}
+                                    bgColor="linear-gradient(84.07deg, #00C555 16.64%, #00E75E 93.78%)"
+                                    hoverBgColor="#15ad57"
+                                    lineColor="#FFC748"
+                                    hoverLineColor="#FFC748"
+                                    textSize={1.25}
+                                    textColor="black"
+                                />
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+             {/* Custom Mobile Nav */}
+             <div className="_minting-nav container-fluid d-block d-lg-none">
+                
+             </div>
+        </div>
+    )
+}
