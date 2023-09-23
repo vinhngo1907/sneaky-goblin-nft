@@ -8,7 +8,7 @@ import EthersProvider from './store/EthersProvider';
 import MessageNet from './store/MessageNet';
 import Navigation from './components/pages/_layouts/Navigation';
 import NotFound from './components/pages/NotFound/NotFound';
-
+import Staking from './components/pages/Staking/Staking';
 
 // Styles & Fonts
 import fontLists from './data/fonts/google/fontList';
