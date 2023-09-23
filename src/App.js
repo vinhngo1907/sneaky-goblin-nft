@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
+import { BrowserRouter as Switch, Router, Route, Routes, Navigate } from 'react-router-dom';
 import GoogleFontLoader from 'react-google-font-loader';
 import { HelmetProvider } from 'react-helmet-async';
 
@@ -23,11 +23,11 @@ function App() {
 					<GoogleFontLoader fonts={fontLists} />
 					<Router>
 						<Navigation />
-						<Switch>
+						<Routes>
 							<Route path="/" element={<Navigate to="/invasion" />} />
 							<Route path="/invasion" element={<Staking />} />
 							<Route path="*" element={<NotFound />} />
-						</Switch>
+						</Routes>
 					</Router>
 				</EthersProvider>
 			</MessageNet>

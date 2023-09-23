@@ -19,9 +19,11 @@ import './StakingNavigation.scss';
 const StakingNavigation = () => {
     const navigate = useNavigate();
     const navigateTo = (route, options) => () => navigate(route, options);
+    
     // States
     const [showMenu, setShowMenu] = useState(false);
     const [showMobileFooter, setShowMobileFooter] = useState(true);
+    
     // Social Medias
     const [socials] = useState({
         discord: '#',

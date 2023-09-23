@@ -197,3 +197,5 @@ const MintNavigation = () => {
         </div>
     )
 }
+
+export default MintNavigation;
