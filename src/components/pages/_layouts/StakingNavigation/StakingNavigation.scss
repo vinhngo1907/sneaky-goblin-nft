@@ -13,7 +13,6 @@
         position: relative;
         top: 2px;
         cursor: pointer;
-
         & img {
             width: 100%;
         }
@@ -35,7 +34,6 @@
             position: relative;
             left: 1px;
         }
-
         & .footer-right-line {
             border: 0.6px solid;
             border-image: linear-gradient(to left, #ffc7480f, #ffc748) 1 0;
@@ -46,7 +44,6 @@
             right: 1px;
         }
     }
-
     & .nav-line-wrap-bottom {
         width: 40%;
         height: 0px;
@@ -63,7 +60,6 @@
             position: relative;
             left: 1px;
         }
-
         & .footer-right-line {
             border: 0.6px solid;
             border-image: linear-gradient(to left, #ffc7480f, #ffc748) 1 0;
@@ -87,12 +83,10 @@
             font-size: 22px;
             line-height: 28px;
             margin-right: 62px;
-
             & a.active {
                 color: #00e55d !important;
             }
         }
-
         & li:last-child {
             margin-right: 0px;
         }
@@ -115,7 +109,6 @@
 
     & .nav-link {
         color: #ffffff !important;
-
         &:hover {
             color: rgba(255, 255, 255, 0.55) !important;
             cursor: pointer;
@@ -181,7 +174,6 @@
 
     & .goblin-wrapper {
         width: 160px;
-
         & img {
             width: 100%;
         }
@@ -219,7 +211,6 @@
                 text-align: center;
                 color: #00c555;
             }
-
             & p {
                 font-family: 'Outfit';
                 font-style: normal;
@@ -240,14 +231,12 @@
     & .roadmap-dot {
         display: inline-block;
         border-radius: 60px;
-
         &.done {
             width: 16px;
             height: 16px;
             background: #00c555;
             margin-top: 29px;
         }
-
         &.ongoing {
             width: 24px;
             height: 24px;
@@ -256,7 +245,6 @@
             border: 4px solid #00c555;
         }
     }
-
     & .roadmap-percent {
         font-family: 'Outfit';
         font-style: normal;
@@ -265,16 +253,13 @@
         line-height: 70px;
         align-items: center;
         text-transform: uppercase;
-
         &.done {
             color: #505050;
         }
-
         &.ongoing {
             color: white;
         }
     }
-
     & .roadmap-date {
         font-family: 'Outfit';
         font-style: normal;
@@ -283,16 +268,13 @@
         line-height: 40px;
         padding: 0px;
         margin: -20px 0px;
-
         &.done {
             color: #505050;
         }
-
         &.ongoing {
             color: #ffc748;
         }
     }
-
     & .roadmap-phase {
         font-family: 'Outfit';
         font-style: normal;
@@ -302,16 +284,13 @@
         text-transform: uppercase;
         margin: 0px;
         padding: 0px;
-
         &.done {
             color: #505050;
         }
-
         &.ongoing {
             color: #00c555;
         }
     }
-
     & ul.roadmap-todos li {
         font-family: 'Outfit';
         font-style: normal;
@@ -319,11 +298,9 @@
         font-size: 1.4em;
         line-height: 50px;
     }
-
     & ul.roadmap-todos.done li {
         color: #505050;
     }
-
     & ul.roadmap-todos.ongoing li {
         color: white;
     }
@@ -350,27 +327,22 @@
             left: 0;
             right: 0;
             top: 71px;
-
             & .conf2 {
                 transform: rotate(-180deg);
                 margin-top: -12px;
                 width: 95%;
             }
-
             & .conf3 {
                 opacity: 1;
             }
-
             & .conf4 {
                 margin-top: -48px;
                 transform: rotate(180deg);
             }
-
             & img {
                 opacity: 0.6;
             }
         }
-
         & .artist-rod {
             width: 416px;
             margin: 0 auto;
@@ -379,7 +351,6 @@
             right: 0;
             top: -108px;
         }
-
         & .artist-profile {
             width: 384px;
             margin: 0 auto;
@@ -391,7 +362,6 @@
 }
 
 ._staking-nav-wrap {
-
     // Mobile Menu - Full Overlay ---------------------------------------------------
     & #MobileMenu {
         background: #141514;
@@ -406,7 +376,6 @@
             display: block;
             animation: bgFadeIn 0.4s;
         }
-
         &.hide {
             display: none;
         }
@@ -460,7 +429,6 @@
                 position: relative;
                 left: 1px;
             }
-
             & .footer-right-line {
                 border: 0.8px solid;
                 border-image: linear-gradient(to left, #ffc7480f, #ffc748) 1 0;
@@ -488,13 +456,11 @@
 
                     & .footer-logo-wrap {
                         width: 40px;
-
                         & img {
                             width: 100%;
                         }
                     }
                 }
-
                 & li:first-child {
                     & .footer-logo-wrap {
                         width: 46px;
@@ -511,7 +477,6 @@
         & .desktop-connect-wrap {
             & ._connector-wrap {
                 width: 122px !important;
-
                 & button {
                     height: 56px !important;
                 }
@@ -528,7 +493,6 @@
             top: 3px;
             right: 175px;
         }
-
         & .nav-line-wrap-bottom {
             top: 61px;
             right: 175px;
@@ -548,7 +512,6 @@
         & .desktop-connect-wrap {
             & ._connector-wrap {
                 width: 112px !important;
-
                 & button {
                     height: 48px !important;
                     font-size: 0.94em !important;
@@ -565,7 +528,6 @@
             right: 156px;
             width: 38%;
         }
-
         & .nav-line-wrap-bottom {
             top: 59px;
             right: 156px;
@@ -595,12 +557,10 @@
             width: 253px;
             margin: 0 auto;
         }
-
         & .nav-line-wrap-bottom,
         & .nav-line-wrap-top {
             display: none;
         }
-
         & .custom-nav {
             display: none;
         }
@@ -619,11 +579,9 @@
                 padding: 10px;
                 height: 53px;
                 margin-top: 0px;
-
                 &:hover {
                     cursor: pointer;
                 }
-
                 & img {
                     width: 100%;
                 }
@@ -667,7 +625,6 @@
 
             & ._connector-wrap {
                 width: 110px !important;
-
                 & button {
                     font-size: 1em !important;
                     height: 50px !important;
@@ -693,7 +650,6 @@
                 &:hover {
                     cursor: pointer;
                 }
-
                 & img {
                     position: relative;
                     top: -3px;
@@ -715,7 +671,6 @@
                 &:hover {
                     cursor: pointer;
                 }
-
                 & img {
                     position: relative;
                     top: -3px;
@@ -746,7 +701,6 @@
 
             & ._connector-wrap {
                 width: 84px !important;
-
                 & button {
                     font-size: 0.8em !important;
                     height: 42px !important;
@@ -776,7 +730,6 @@
                 &:hover {
                     cursor: pointer;
                 }
-
                 & img {
                     position: relative;
                     top: -6px;
@@ -802,7 +755,6 @@
                 &:hover {
                     cursor: pointer;
                 }
-
                 & img {
                     position: relative;
                     top: -6px;
@@ -839,7 +791,6 @@
                 & .footer-left-line {
                     width: 49.95%;
                 }
-
                 & .footer-right-line {
                     top: -1.2px;
                     width: 49.95%;
@@ -850,11 +801,9 @@
                 & ul {
                     padding: 4px 0px 0px;
                 }
-
                 & ul li .footer-logo-wrap {
                     width: 30px;
                 }
-
                 & ul li:first-child .footer-logo-wrap {
                     width: 38px;
                 }
@@ -886,7 +835,6 @@
             //right: 26px;
 
             & ._connector-wrap {
-
                 //width: 84px !important;
                 & button {
                     //font-size: .8em !important;
@@ -913,7 +861,6 @@
             //right: 26px;
 
             & ._connector-wrap {
-
                 //width: 84px !important;
                 & button {
                     //font-size: .8em !important;
@@ -934,8 +881,8 @@
         ._staking-nav-wrap {
             & #FooterWrap {
                 & .line-wrap {
-                    & .footer-left-line {}
-
+                    & .footer-left-line {
+                    }
                     & .footer-right-line {
                         top: -1.4px;
                     }
@@ -986,7 +933,6 @@
                 top: -2.3px;
             }
         }
-
         & .nav-line-wrap-bottom {
             & .footer-right-line {
                 top: -2.3px;
